@@ -115,7 +115,7 @@ public class AccountImpl implements Account{
 		
 		public Account build() {
 			AccountImpl account = new AccountImpl();
-			atm.registerObserver(account,new AccountObserver(account));
+			atm.registerObserver(account, new AccountObserver(account));
 			account.accountNumber=accountNumber;
 			account.balance=balance;
 			account.customer=customer;
@@ -127,4 +127,4 @@ public class AccountImpl implements Account{
 	}
 	
 }
-}
+
